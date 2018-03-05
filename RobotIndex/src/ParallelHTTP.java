@@ -42,7 +42,6 @@ public class ParallelHTTP implements Runnable {
 	// Runnable
 
 	public void run() {
-		
 		d.trace(url, buffer);
 	}
 

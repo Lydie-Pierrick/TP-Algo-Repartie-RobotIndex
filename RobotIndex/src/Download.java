@@ -18,9 +18,11 @@ public class Download {
 			url = new URL(ad);
 			array = new byte[buffer];
 			iS = url.openStream();
-
-			System.out.println("Start flux: ");
-			System.out.println((double) toS(System.nanoTime()));
+			
+			System.out.println("\nURL :" + url + "\n");
+			
+//			System.out.println("Start flux: ");
+//			System.out.println((double) toS(System.nanoTime()));
 			size = 0;
 			time_start = System.nanoTime();
 			do {
@@ -38,8 +40,8 @@ public class Download {
 			System.out.println("Speed: "
 					+ toMbs(size_total, time_now - time_start) + "Mb/s");
 
-			System.out.println("End flux: ");
-			System.out.println((double) toS(System.nanoTime()));
+//			System.out.println("End flux: ");
+//			System.out.println((double) toS(System.nanoTime()));
 
 		} catch (Exception e) {
 		}
